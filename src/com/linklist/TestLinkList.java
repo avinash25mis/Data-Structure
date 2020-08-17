@@ -83,5 +83,6 @@ public class TestLinkList {
         linkList.show();
         linkList.removeAtIndex(0);
         linkList.show();
+        System.out.println();
     }
 }
