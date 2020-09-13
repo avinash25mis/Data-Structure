@@ -1,6 +1,11 @@
 package com.linklist;
 
 import com.common.MyException;
+import sun.reflect.generics.tree.Tree;
+
+import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.LinkedList;
 
 /**
  * @author avinash.a.mishra
@@ -121,6 +126,8 @@ private MyNode head;
                     traverser.next = traverser.next.next;
                   /*  MyNode temp = traverser.next;
                     traverser.next=temp.next;*/
+                    //Hashtable
+
                 }
             }
         }
