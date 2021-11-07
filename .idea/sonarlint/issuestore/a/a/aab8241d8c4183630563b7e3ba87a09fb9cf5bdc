@@ -1,0 +1,17 @@
+
+V
+java:S1854>";Remove this useless assignment to local variable "removed".(òä‚õúÿÿÿÿ
+V
+java:S1854;";Remove this useless assignment to local variable "removed".(‘²ƒšúÿÿÿÿ
+S	java:S1069"9Replace this use of System.out or System.err by a logger.(ûÓ‹ùÿÿÿÿ
+G
+java:S1481;",Remove this unused "removed" local variable.(‘²ƒšúÿÿÿÿ
+S	java:S106D"9Replace this use of System.out or System.err by a logger.(ûÓ‹ùÿÿÿÿ
+V	java:S125z"<This block of commented-out lines of code should be removed.(¢ˆüÿÿÿÿ
+T	java:S106‡"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+T	java:S106‹"9Replace this use of System.out or System.err by a logger.(¥¦óÃÿÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(šÿê«ùÿÿÿÿ
+T	java:S106"9Replace this use of System.out or System.err by a logger.(ªÓ¼áşÿÿÿÿ
+O	java:S106‘"9Replace this use of System.out or System.err by a logger.(‚¨¸×
+E
+java:S1066x"/Merge this if statement with the enclosing one.(­ÚÁ“

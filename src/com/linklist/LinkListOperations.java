@@ -1,33 +1,28 @@
 package com.linklist;
 
-import com.common.MyException;
-import sun.reflect.generics.tree.Tree;
-
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.LinkedList;
+import com.linklist.core.DoublyNode;
 
 /**
  * @author avinash.a.mishra
  */
-public class MyLinkList {
+public class LinkListOperations {
 
-private MyNode head;
+private DoublyNode head;
 
-    MyLinkList(int data){
-        MyNode node = new MyNode();
+    LinkListOperations(int data){
+        DoublyNode node = new DoublyNode();
         node.next=null;
         node.data=data;
         head= node;
     }
 
 
-    MyLinkList(){
+    LinkListOperations(){
 
     }
 
   public void  addFirst(int data){
-      MyNode node =new MyNode();
+      DoublyNode node =new DoublyNode();
       node.data=data;
       if(head==null){
           node.next=null;
@@ -40,14 +35,14 @@ private MyNode head;
 
 
     public void  addLast(int data){
-        MyNode node =new MyNode();
+        DoublyNode node =new DoublyNode();
         node.data=data;
 
         if(head==null){
             node.next=null;
             head=node;
         }else{
-            MyNode traverser =head;
+            DoublyNode traverser =head;
           while(traverser.next!=null){
 
               traverser=traverser.next;
@@ -61,7 +56,7 @@ private MyNode head;
       if(head==null){
           System.out.println("LinkList Empty");
       }else{
-          MyNode removed=head;
+          DoublyNode removed=head;
           head= head.next;
 
           removed=null; //eligible for garbage collection
@@ -72,7 +67,7 @@ private MyNode head;
       if(head==null){
           System.out.println("LinkList Empty");
       }else{
-          MyNode traverser=head;
+          DoublyNode traverser=head;
           while (traverser.next!=null){
                if(traverser.next.next==null){
                    traverser.next=null;
@@ -90,10 +85,10 @@ private MyNode head;
         if(index==0){
             addFirst(data);  // very imp condition :-)
         }else{
-            MyNode newNode=new MyNode();
+            DoublyNode newNode=new DoublyNode();
             newNode.data=data;
             newNode.next=null;
-            MyNode traverser=head;
+            DoublyNode traverser=head;
             for(int i=0;i<index-1;i++)  {   // 1. array start with 0,
                if(traverser!=null) {
                    traverser = traverser.next;
@@ -114,7 +109,7 @@ private MyNode head;
         if(index==0){
             removeFirst();  // very imp condition :-)
         }else{
-            MyNode traverser=head;
+            DoublyNode traverser=head;
             for(int i=0;i<index-1;i++)  {   // 1. array start with 0,
                 if(traverser!=null) {
                     traverser = traverser.next;
@@ -139,7 +134,7 @@ private MyNode head;
     public void show(){
         System.out.println();
         if(head!=null) {
-            MyNode traverser=head;
+            DoublyNode traverser=head;
             while (traverser.next!=null){
                 System.out.print(traverser.data+",");
                 traverser=traverser.next;

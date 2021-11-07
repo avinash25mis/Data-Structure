@@ -1,7 +1,5 @@
 package com.linklist;
 
-import java.util.LinkedList;
-
 /**
  * @author avinash.a.mishra
  */
@@ -20,7 +18,7 @@ public class TestLinkList {
 
 
     private static void checkAddLast() {
-        MyLinkList linkList =new MyLinkList();
+        LinkListOperations linkList =new LinkListOperations();
         linkList.addLast(1);
         linkList.addLast(2);
         linkList.addLast(3);
@@ -28,7 +26,7 @@ public class TestLinkList {
     }
 
     private static void checkAddFirst() {
-     MyLinkList linkList =new MyLinkList();
+     LinkListOperations linkList =new LinkListOperations();
      linkList.addFirst(1);
      linkList.addFirst(2);
      linkList.addFirst(3);
@@ -37,7 +35,7 @@ public class TestLinkList {
 
 
     private static void checkRemoveFirst() {
-        MyLinkList linkList =new MyLinkList();
+        LinkListOperations linkList =new LinkListOperations();
         linkList.addLast(1);
         linkList.addLast(2);
         linkList.addLast(3);
@@ -50,7 +48,7 @@ public class TestLinkList {
 
 
     private static void checkRemoveLast() {
-        MyLinkList linkList =new MyLinkList();
+        LinkListOperations linkList =new LinkListOperations();
         linkList.addLast(1);
         linkList.addLast(2);
         linkList.addLast(3);
@@ -63,7 +61,7 @@ public class TestLinkList {
 
 
     private static void checkAddAtIndex() {
-        MyLinkList linkList =new MyLinkList();
+        LinkListOperations linkList =new LinkListOperations();
         linkList.addLast(1);
         linkList.addLast(2);
         linkList.addLast(3);
@@ -75,7 +73,7 @@ public class TestLinkList {
 
 
     private static void checkRemoveAtIndex() {
-        MyLinkList linkList =new MyLinkList();
+        LinkListOperations linkList =new LinkListOperations();
         linkList.addLast(1);
         linkList.addLast(2);
         linkList.addLast(3);

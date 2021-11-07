@@ -1,5 +1,8 @@
 package com.tree;
 
+import com.tree.core.BinaryTree;
+import com.tree.core.Node;
+
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -22,16 +25,17 @@ public class TestTree {
   */
 
     public static void main(String[] args) {
-        BinaryTree binaryTree =new BinaryTree(2);
-        binaryTree.root.left=new NodeTree(3);
-        binaryTree.root.right=new NodeTree(4);
-        binaryTree.root.left.left=new NodeTree(5);
-        binaryTree.root.left.right=new NodeTree(6);
+        BinaryTree binaryTree =new BinaryTree();
+        binaryTree.root=new Node(2);
+        binaryTree.root.left=new Node(3);
+        binaryTree.root.right=new Node(4);
+        binaryTree.root.left.left=new Node(5);
+        binaryTree.root.left.right=new Node(6);
         //System.out.println(heightOfTree(binaryTree.root));
        breathFirstSearch(binaryTree.root);
     }
 
-    private static int heightOfTree(NodeTree node) {
+    private static int heightOfTree(Node node) {
 
       if(node ==null){
           return 0;
@@ -50,7 +54,7 @@ public class TestTree {
 
 
 
-    private static void breathFirstSearch(NodeTree root) {
+    private static void breathFirstSearch(Node root) {
         int h = heightOfTree(root);
         int i;
         for (i=1; i<=h; i++)
@@ -68,7 +72,7 @@ public class TestTree {
        to reach that level value, by decrementing  the provided "level" value
        once we reach that level ie "level==1", we print it
       */
-    private static void printGivenLevel(NodeTree node, int level) {
+    private static void printGivenLevel(Node node, int level) {
        List<String> array=new ArrayList<>();
       Collections.reverse(new ArrayList<>());
         if (node == null)
