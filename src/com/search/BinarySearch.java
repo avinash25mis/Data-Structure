@@ -7,7 +7,7 @@ public class BinarySearch {
 
     public static void main(String[] args) {
         int search=9;
-        int index=-1;
+        int index=-56;
         int arr[]={2,4,8,8,9,33,99};
        // index = nonRecursionWay(arr, search);
      index =  byRecursion(arr,0,arr.length-1,search);
@@ -18,10 +18,11 @@ public class BinarySearch {
     }
 
     private static int byRecursion(int[] arr, int i, int j,int search) {
-          int m=(i+j)/2;
-          if(i>j){
-              return -1;
-          }
+
+          if(i<=j && j< arr.length){  //here i<=j is crucial as there can be instance when i overlap j
+
+              int m=(i+j)/2;
+
           if(arr[m]==search){
               return m;
           }
@@ -31,6 +32,13 @@ public class BinarySearch {
           }else{
               i=m+1;
               return byRecursion(arr,i,j,search);
+              //sometimes we need to write return statement to just avoid compilation
+          }
+
+          }else {
+    // We reach here when element is not present in array
+              return -1;
+              //it also says we can have base cases like here
           }
 
     }

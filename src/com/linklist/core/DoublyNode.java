@@ -14,7 +14,7 @@ public class DoublyNode {
 
    }
 
-   DoublyNode(int data, DoublyNode next){
+  public DoublyNode(int data, DoublyNode next){
       this.data=data;
       this.next=next;
    }

@@ -7,7 +7,7 @@ public class SinglyNode {
   public int val;
   public SinglyNode next;
   public SinglyNode() {}
-  SinglyNode(int val) { this.val = val; }
-  SinglyNode(int val, SinglyNode next) { this.val = val; this.next = next; }
+  public SinglyNode(int val) { this.val = val; }
+  public SinglyNode(int val, SinglyNode next) { this.val = val; this.next = next; }
 
 }
