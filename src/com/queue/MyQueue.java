@@ -61,7 +61,7 @@ public class MyQueue {
             throw new MyException("Queue Full");
         }
         arr[rear]=value;
-        rear=(rear+1)%capacity;
+        rear=(rear + 1) % capacity;
         size++;
     }
 

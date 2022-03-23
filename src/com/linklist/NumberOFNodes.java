@@ -2,7 +2,7 @@ package com.linklist;
 
 
 import com.tree.core.BinaryTree;
-import com.tree.core.MyBinaryTreeUtils;
+import com.tree.core.BinaryTreeUtils;
 import com.tree.core.Node;
 
 /**
@@ -11,7 +11,7 @@ import com.tree.core.Node;
 public class NumberOFNodes {
 
     public static void main(String[] args) {
-        BinaryTree binaryTree = MyBinaryTreeUtils.generateBinaryTree();
+        BinaryTree binaryTree = BinaryTreeUtils.generateBinaryTree();
         int i = countNodes(binaryTree.root);
         System.out.println(i);
     }
