@@ -34,16 +34,16 @@ class AddTwo1 {
 
         SinglyNode  t1=l1;
         SinglyNode  t2=l2;
-        SinglyNode re=result;
+        SinglyNode res=result;
 
         do {
-            re.val= t1.val+t2.val;
+            res.val= t1.val+t2.val;
             t1=t1.next;
             t2=t2.next;
             if(t1!=null && t2!=null) {
                 SinglyNode newNode= new SinglyNode();
-                re.next=newNode;
-                re=re.next;
+                res.next=newNode;
+                res=res.next;
             }
 
         }while(t1!=null && t2!=null);
